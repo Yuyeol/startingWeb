@@ -1,0 +1,11 @@
+@import "reset.css";
+
+/* Screen */
+@import "screen/main.css";
+
+/* Component */
+@import "component/main-header.css";
+
+body {
+  padding: 10px 20px;
+}
