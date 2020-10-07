@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "media.css";
 
 /* Screen */
 @import "screen/main/search-area.css";
@@ -7,8 +8,14 @@
 /* Component */
 @import "component/main-header.css";
 
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: blue;
+  }
+}
+
 body {
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
   color: rgba(0, 0, 0, 0.5);
 }
 

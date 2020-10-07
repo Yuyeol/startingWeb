@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 .main-header {
   position: fixed;
+  top: 10px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   font-size: 30px;
-  padding: 0px 80px;
+  padding: 0px 12%;
+  background-color: white;
 }
 
 .main-header__column {
-  width: 33.3%;
+  width: 10%;
   display: flex;
   align-items: center;
 }
@@ -18,6 +20,7 @@
 .main-header__column:nth-child(2) {
   justify-content: center;
   color: #007655;
+  width: 80%;
 }
 
 .main-header__column:nth-child(3) {
