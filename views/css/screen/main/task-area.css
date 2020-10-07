@@ -1,0 +1,133 @@
+/* Common */
+.task-area {
+  display: flex;
+  justify-content: center;
+}
+
+.memo,
+.todo-list,
+.book-mark {
+  width: 25%;
+  height: 30%;
+  margin: 20px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.task-area .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 10px 0 30px 0;
+}
+
+.memo__save,
+.todo-list__input input,
+.book-mark__input input {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.memo__save,
+.task-area input::placeholder {
+  color: #00765593;
+  font-weight: 600;
+}
+
+.task-area input,
+.memo__save {
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  font-size: 15px;
+  text-align: center;
+  width: 100px;
+  padding: 5px 10px;
+}
+
+.task-area ul {
+  width: 90%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+/* Memo */
+.memo textarea {
+  height: 380px;
+  width: 80%;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.memo__save {
+  cursor: pointer;
+}
+
+/* Todo list */
+.todo-list {
+  border-left: 2px solid #00765593;
+  border-right: 2px solid #00765593;
+}
+
+.todo-list li {
+  width: 300px;
+  height: 10px;
+  font-size: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  text-align: start;
+  border-bottom: 1px solid #00765593;
+}
+
+/* Book mark */
+.book-mark ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.book-mark li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007655;
+  color: white;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+
+/* Animation */
+@keyframes activateBtn {
+  from {
+    transform: none;
+  }
+  to {
+    border: 10px solid #007655;
+  }
+}
+
+.memo__save:hover {
+  animation: activateBtn 0.5s ease-in-out forwards;
+}
+
+@keyframes activateInput {
+  from {
+    transform: none;
+  }
+  to {
+    width: 300px;
+    border: 10px solid #007655;
+  }
+}
+
+.todo-list__input input:focus,
+.book-mark__input input:focus {
+  animation: activateInput 0.5s ease-in-out forwards;
+}

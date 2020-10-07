@@ -14,10 +14,12 @@
         </a>
       </div>
       <div class="main-header__column">
-        <span class="main-header__title">Starting - Page</span>
+        <a href="index.html">
+          <span class="main-header__title">Starting - Page</span>
+        </a>
       </div>
       <div class="main-header__column">
-        <a class="main-header__logout" href="#">Logout</a>
+        <a class="main-header__logout" href="#">LOGOUT</a>
         <a href="#">
           <img
             src="https://lh3.googleusercontent.com/ogw/ADGmqu_AZoC0k3KKOQ0HdvHfW44Wd_XiDFARWvxVkWAm=s32-c-mo"
@@ -26,26 +28,86 @@
         </a>
       </div>
     </header>
-    <div class="clock-row">
-      <div class="clock">
-        <div class="clock__date">
-          <span class="clock__year">2020년</span>
-          <span class="clock__month">10월</span>
-          <span class="clock__day"> 5일 </span>
+
+    <main class="main-screen">
+      <div class="search-area">
+        <div class="js-clock clock">
+          <div class="js-date clock__date">
+            <span></span>
+          </div>
+          <div class="js-time clock__time">
+            <span></span>
+          </div>
         </div>
-        <div class="js-clock clock__time">
-          <span></span>
+        <div class="search">
+          <div class="search__input">
+            <input type="text" placeholder="Search" class="js-searchInput" />
+          </div>
         </div>
       </div>
-      <div class="search">
-        <input type="text" placeholder="Search" />
-        <i class="fas fa-search"></i>
+
+      <div class="task-area">
+        <div class="memo">
+          <div class="title">MEMO</div>
+          <textarea placeholder="Memo"></textarea>
+          <div class="memo__save">Save</div>
+        </div>
+        <div class="todo-list">
+          <div class="title">Todo list</div>
+          <div class="scroll">
+            <ul class="todo-list__list">
+              <li><span> 설거지 </span></li>
+              <li><span> 화장실 청소 </span></li>
+              <li><span> react 복습 </span></li>
+              <li><span> 프로젝트 아이디어 </span></li>
+              <li><span> 책읽기 </span></li>
+              <li><span> 저녁밥 하기 </span></li>
+              <li><span> 미용실 가기 </span></li>
+              <li><span> 이마트에서 연어 사오기 </span></li>
+            </ul>
+          </div>
+          <div class="todo-list__input">
+            <input type="text" placeholder="Add Todo" />
+          </div>
+        </div>
+        <div class="book-mark">
+          <div class="title">Book mark</div>
+          <div class="scroll">
+            <ul class="book-mark__list">
+              <li>구글</li>
+              <li>네이버</li>
+              <li>무신사</li>
+              <li>인프런</li>
+              <li>쿠팡</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+              <li>etc</li>
+            </ul>
+          </div>
+          <div class="book-mark__input">
+            <input type="text" placeholder="Add URL" />
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
   <script
     src="https://kit.fontawesome.com/36bc4c83be.js"
     crossorigin="anonymous"
   ></script>
   <script src="../clock.js"></script>
+  <script src="../search.js"></script>
 </html>

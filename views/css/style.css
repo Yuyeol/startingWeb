@@ -1,11 +1,22 @@
 @import "reset.css";
 
 /* Screen */
-@import "screen/main.css";
+@import "screen/main/search-area.css";
+@import "screen/main/task-area.css";
 
 /* Component */
 @import "component/main-header.css";
 
 body {
-  padding: 10px 20px;
+  padding: 10px 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.scroll {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }

@@ -1,12 +1,21 @@
-const clockBox = document.querySelector(".js-clock");
-const clockNum = clockBox.querySelector("span");
+const clockDate = document.querySelector(".js-date");
+const clockGetDate = clockDate.querySelector("span");
+const clockTime = document.querySelector(".js-time");
+const clockGetTime = clockTime.querySelector("span");
 
 function getTime() {
   const date = new Date();
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
   const hours = date.getHours();
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
-  clockNum.innerText = `${getH(hours)}시 ${getM(minutes)}분 ${getS(seconds)}초`;
+
+  clockGetDate.innerText = `${year}년 ${month}월 ${day}일`;
+  clockGetTime.innerText = `${getH(hours)}시 ${getM(minutes)}분 ${getS(
+    seconds
+  )}초`;
 }
 
 function init() {
